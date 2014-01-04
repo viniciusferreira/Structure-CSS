@@ -23,14 +23,28 @@
         element.className = classes.join(' ');
     }
 
-    menuLink.onclick = function (e) {
-        var active = 'active';
+    if(document.getElementById('navbarLink') != null){
 
-        e.preventDefault();
-        toggleClass(layout, active);
-        toggleClass(menu, active);
-        toggleClass(menuLink, active);
-        toggleClass(navbar, active);
-    };
+        navbarLink.onclick = function (e) {
+            var active = 'active';
+
+            e.preventDefault();
+            toggleClass(navbar, active);
+        };
+
+    }
+
+    if(document.getElementById('menuLink') != null){
+
+        menuLink.onclick = function (e) {
+            var active = 'active';
+
+            e.preventDefault();
+            toggleClass(layout, active);
+            toggleClass(menu, active);
+            toggleClass(menuLink, active);
+            toggleClass(navbar, active);
+        };
+    }
 
 }(this, this.document));

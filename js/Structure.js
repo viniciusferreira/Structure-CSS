@@ -33,14 +33,4 @@
         toggleClass(navbar, active);
     };
 
-
-
-    
-    navbarLink.onclick = function (e) {
-        var active = 'active';
-
-        e.preventDefault();
-        toggleClass(navbar, active);
-    };
-
 }(this, this.document));

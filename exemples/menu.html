@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Structure CSS - Menus</title>
+    <link rel="stylesheet" href="../css/Structure.css">
+</head>
+<body>
+	<div id="layout">
+		<a href="#sidebar" id="menuLink"></a>
+		<div id="sidebar">
+			<ul>
+				<a href="index.html"><li class="header">Structure</li></a>
+				<a href="base.html"><li>Base</li></a>
+				<a href="grid.html"><li>Grid</li></a>
+				<a href="buttons.html"><li>Botões</li></a>
+				<a href="menu.html"><li class="selected">Menus</li></a>
+				<a href="icons.html"><li>Icones</li></a>
+				<a href="avisos.html"><li>Avisos</li></a>
+				<a href="forms.html"><li>Forms</li></a>
+			</ul>
+		</div>
+		<div class="col-l-11-12 col-offset-1-24" id="page">
+			<div class="row">
+					<h1>Navbar (Responsivo)</h1>
+					<div id="navbar">
+						<a href="#navbar" id="navbarLink" class="float-right"></a>
+						<a href="" class="titulo float-left">
+							Waze CSS
+						</a>
+						<ul>
+							<a href=""><li>Home</li></a>
+							<a href=""><li>Sobre</li></a>
+							<a href=""><li>Contato</li></a>
+						</ul>
+					</div>
+			</div>
+
+			<div class="row"></div>
+
+			<div class="row">
+					<h1>&laquo; Sidebar (Responsivo)</h1>
+					<div class="panel">
+						<p>O sidebar padrão é fixo e responsivo, para usar a sidebar você tem que criar um div id="layout" colocar a sidebar, e no resto da pagina adicionar o id="page".</p>
+					</div>
+			</div>
+
+			<!-- Paginator Type 1 -->
+			<div class="row">
+				<h1>Paginator Dark</h1>
+				<div class="col-l-1">
+					<div class="paginator-dark">
+						<ul>
+							<a href=""><li class="link-left">&laquo;</li></a>
+							<a href=""><li class="selected">1</li></a>
+							<a href=""><li>2</li></a>
+							<a href=""><li>3</li></a>
+							<a href=""><li>4</li></a>
+							<a href=""><li>5</li></a>
+							<a href=""><li class="link-right">&raquo;</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Paginator Type 2 -->
+			<div class="row">
+				<h1>Paginator Light</h1>
+				<div class="col-l-1">
+					<div class="paginator-light">
+						<ul>
+							<a href=""><li class="link-left">&laquo;</li></a>
+							<a href=""><li class="selected">1</li></a>
+							<a href=""><li>2</li></a>
+							<a href=""><li>3</li></a>
+							<a href=""><li>4</li></a>
+							<a href=""><li>5</li></a>
+							<a href=""><li class="link-right">&raquo;</li></a>
+						</ul>
+					</div>				
+				</div>
+			</div>
+
+
+
+			
+
+
+
+		</div>
+	</div>
+
+
+	<script src="../js/Structure.js"></script>
+</body>
+</html>

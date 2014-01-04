@@ -1,0 +1,44 @@
+<!doctype html> 
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Structure CSS - Botões</title>
+    <link rel="stylesheet" href="../css/Structure.css">
+</head>
+<body>
+	<div id="layout">
+		<a href="#sidebar" id="menuLink"></a>
+		<div id="sidebar">
+			<ul>
+				<a href="index.html"><li class="header">Structure</li></a>
+				<a href="base.html"><li>Base</li></a>
+				<a href="grid.html"><li>Grid</li></a>
+				<a href="buttons.html"><li class="selected">Botões</li></a>
+				<a href="menu.html"><li>Menus</li></a>
+				<a href="icons.html"><li>Icones</li></a>
+				<a href="avisos.html"><li>Avisos</li></a>
+				<a href="forms.html"><li>Forms</li></a>
+			</ul>
+		</div>
+		<div class="col-l-11-12 col-offset-1-24" id="page">
+			<h1>Botões</h1>
+			<div class="col-1">
+				<h3>Default Buttons</h3>
+				<input type="button" value="Default Button" class="button">
+				<input type="button" value="Disabled Button" class="button button-disabled">
+				<input type="button" value="Primary Button" class="button button-primary">
+			</div>		
+			<div class="col-l-1">
+				<h3>Colored Buttons</h3>
+				<input type="button" value="Success Button" class="button button-success">
+				<input type="button" value="Error Button" class="button button-error">
+				<input type="button" value="Warning Button" class="button button-warning">
+				<input type="button" value="Secondary Button" class="button button-secondary">
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../js/Structure.js"></script>
+</body>
+</html>

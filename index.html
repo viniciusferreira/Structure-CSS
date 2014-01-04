@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Structure CSS</title>
+	<link rel="stylesheet" href="css/Structure.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row mg-t-50">
+			<div class="col-7">
+				<h1>Structure CSS</h1>
+				<h3>Framework CSS responsivo</h3>
+				<p>
+					Structure CSS é um framework css responsivo 100% brasileiro que conta com inumeras funcionalidades e ferramentas feitas para facilitar o desenvolvimente de aplicações web, que conta com sistema de grids, botões, forms e muito mais gatuitamente.
+				</p>
+				<a href="https://github.com/Structure-CSS/Structure-CSS/" target="_blank">
+					<input type="button" value="Download no Github" class="button button-primary">
+				</a>
+			</div>
+			<div class="col-5">
+				<img src="img/responsive.jpg" alt="">
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-12"><h1>Grids</h1></div>
+			<div class="col-1 panel ">1</div> <div class="col-11 panel omega">11</div>
+			<div class="col-2 panel ">2</div> <div class="col-10 panel omega">10</div>
+			<div class="col-3 panel ">3</div> <div class="col-9 panel omega">9</div>
+			<div class="col-4 panel ">4</div> <div class="col-8 panel omega">8</div>
+			<div class="col-5 panel ">5</div> <div class="col-7 panel omega">7</div>
+			<div class="col-6 panel ">6</div> <div class="col-6 panel omega">6</div>
+			<div class="col-7 panel ">7</div> <div class="col-5 panel omega">5</div>
+			<div class="col-8 panel ">8</div> <div class="col-4 panel omega">4</div>
+			<div class="col-9 panel ">9</div> <div class="col-3 panel omega">3</div>
+			<div class="col-10 panel ">10</div> <div class="col-2 panel omega">2</div>
+			<div class="col-11 panel ">11</div> <div class="col-1 panel omega">1</div>
+			<div class="col-12 panel ">12</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-9">
+				<h1>Menus</h1>
+				<a href="#sidebar" id="menuLink" class="hidden"></a>
+				<h3>Navbar + Dropdown</h3>
+				<div id="navbar">
+					<a href="#navbar" id="navbarLink" class="float-right"></a>
+					<a href="" class="titulo float-left">
+						Waze CSS
+					</a>
+					<ul>
+						<a href=""><li>Home</li></a>
+						<a href=""><li class="drop">Sobre
+							<ul>
+								<a href=""><li>Opcao 1</li></a>
+								<a href=""><li>Opcao 2</li></a>						
+								<a href=""><li class="last">Opcao 3</li></a>
+							</ul>
+						</li></a>
+						<a href=""><li>Contato</li></a>
+					</ul>
+				</div>
+				
+				<div class="col-6">
+					<h3>paginator Dark</h3>
+					<div class="col-12">
+						<div class="paginator-dark">
+							<ul>
+								<a href=""><li class="link-left">&laquo;</li></a>
+								<a href=""><li class="selected">1</li></a>
+								<a href=""><li>2</li></a>
+								<a href=""><li>3</li></a>
+								<a href=""><li>4</li></a>
+								<a href=""><li>5</li></a>
+								<a href=""><li class="link-right">&raquo;</li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6">
+					<h3>Paginator White</h3>
+					<div class="col-12">
+						<div class="paginator-light">
+							<ul>
+								<a href=""><li class="link-left">&laquo;</li></a>
+								<a href=""><li class="selected">1</li></a>
+								<a href=""><li>2</li></a>
+								<a href=""><li>3</li></a>
+								<a href=""><li>4</li></a>
+								<a href=""><li>5</li></a>
+								<a href=""><li class="link-right">&raquo;</li></a>
+							</ul>
+						</div>				
+					</div>
+				</div>
+				
+				<hr>
+
+				<h1>Forms</h1>
+				<form action="">
+					<input type="text" placeholder="Default" class="input col-5">
+					<input type="password" placeholder="Password" class="input col-5">
+					<input type="text" placeholder="Error" class="input input-error col-5">
+					<input type="text" placeholder="Success" class="input input-success col-5">
+					<input type="text" placeholder="Disabled" class="input input-disabled col-5" disabled>
+					<textarea name="" id="" cols="30" rows="10" class="textarea col-5" Placeholder="Textarea"></textarea>
+				</form>
+
+				<div class="col-12">
+					<hr>
+					<h1>Avisos</h1>
+				</div>
+				
+				<div class="col-12 success">
+					<p>Success</p>
+				</div>
+				<div class="col-12 error">
+					<p>Error</p>
+				</div>
+				<div class="col-12 warning">
+					<p>Warning</p>
+				</div>
+				<div class="col-12 neutro">
+					<p>Neutro</p>
+				</div>
+				
+				<div class="col-12">
+					<hr>
+					<h1>Margins</h1>
+				
+					<p>Com o Structure CSS você não vai precisar mais escrever uma código no css para colocar alguma margem em seu projeto, basta colocar uma class com o seguinte código mg-t-*, mg-b-*, mg-l-* e mg-r-*.
+					</p>
+
+					<p>Os valores vão e 5 pixels a 90 pixels.</p>
+					<br>
+					<h3>Classes</h3>
+					<p><b>mg-t-*</b> = margin-top: *;</p>
+					<p><b>mg-b-*</b> = margin-bottom: *;</p>
+					<p><b>mg-l-*</b> = margin-left: *;</p>
+					<p><b>mg-r-*</b> = margin-right: *;</p>
+					<h3>Testar</h3>
+					<div class="" id="bloco"></div>
+					<form action="">
+						<input type="text" class="input css-value" placeholder="Mg-t-*">
+					</form>
+				</div>
+
+			</div>
+			<div class="col-3">
+				<div class="col-12">
+					<h1>Sidebar</h1>
+					<p>Veja um exemplo da sidebar clicando <a href="exemples/demo-sidebar.html" target="_blank">Aqui</a>!
+					</p>
+				</div>
+
+				<h1>Botões</h1>
+				<div class="col-12">
+					<h3>Default Buttons</h3>
+					<input type="button" value="Default Button" class="button">
+					<input type="button" value="Disabled Button" class="button button-disabled">
+					<input type="button" value="Primary Button" class="button button-primary">
+				</div>		
+				<div class="col-12">
+					<h3>Colored Buttons</h3>
+					<input type="button" value="Success Button" class="button button-success">
+					<input type="button" value="Error Button" class="button button-error">
+					<input type="button" value="Warning Button" class="button button-warning">
+					<input type="button" value="Secondary Button" class="button button-secondary">
+				</div>
+
+				<div class="col-12">
+					<h1>Icones</h1>
+					<p>O Structure já vem equipado com uma fonte de icones para facilitar na hora de adicionar um icone na pagina.
+          			Veja o exemplo clicando <a href="exemples/demo-font.html" target="_blank">Aqui</a>!
+					</p>
+        			<p>Para usar a fonte você adiciona uma tag < i> e coloca a class com o nome do icone.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/Structure.js"></script>
+	<script src="js/jquery.js"></script>
+
+	<script>
+
+		$("input").keyup(function(){
+			var value = $(".css-value").val();
+			$("#bloco").removeClass();
+			$("#bloco").addClass(value);
+			return false;
+		});
+
+	</script>
+</body>
+</html>

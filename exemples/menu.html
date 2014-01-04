@@ -18,11 +18,12 @@
 				<a href="icons.html"><li>Icones</li></a>
 				<a href="avisos.html"><li>Avisos</li></a>
 				<a href="forms.html"><li>Forms</li></a>
+				<a href="margin.html"><li>Margins</li></a>
 			</ul>
 		</div>
 		<div class="col-l-11-12 col-offset-1-24" id="page">
 			<div class="row">
-					<h1>Navbar (Responsivo)</h1>
+					<h1>Navbar (Responsivo) + Dropdown</h1>
 					<div id="navbar">
 						<a href="#navbar" id="navbarLink" class="float-right"></a>
 						<a href="" class="titulo float-left">
@@ -30,11 +31,18 @@
 						</a>
 						<ul>
 							<a href=""><li>Home</li></a>
-							<a href=""><li>Sobre</li></a>
+							<a href=""><li class="drop">Sobre
+								<ul>
+									<a href=""><li>Opcao 1</li></a>
+									<a href=""><li>Opcao 2</li></a>						
+									<a href=""><li class="last">Opcao 3</li></a>
+								</ul>
+							</li></a>
 							<a href=""><li>Contato</li></a>
 						</ul>
 					</div>
 			</div>
+
 
 			<div class="row"></div>
 
@@ -90,7 +98,7 @@
 		</div>
 	</div>
 
-
+	<script src="../js/jquery.js"></script>
 	<script src="../js/Structure.js"></script>
 </body>
 </html>

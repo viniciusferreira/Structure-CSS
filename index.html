@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
 	<meta charset="UTF-8">
-	<title>Structure CSS</title>
+	<title>Structure CSS </title>
 	<link rel="stylesheet" href="css/Structure.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 				<h1>Structure CSS</h1>
 				<h3>Framework CSS responsivo</h3>
 				<p>
-					Structure CSS é um framework css responsivo 100% brasileiro que conta com inumeras funcionalidades e ferramentas feitas para facilitar o desenvolvimente de aplicações web, que conta com sistema de grids, botões, forms e muito mais gatuitamente.
+					Structure CSS é um framework css responsivo 100% brasileiro que conta com inumeras funcionalidades e ferramentas feitas para facilitar o desenvolvimente de aplicações web, que conta com sistema de grids, botões, forms e muito mais gratuitamente.
 				</p>
 				<a href="https://github.com/Structure-CSS/Structure-CSS/" target="_blank">
 					<input type="button" value="Download no Github" class="button button-primary">
@@ -27,19 +27,20 @@
 
 		<div class="row">
 			<div class="col-12"><h1>Grids</h1></div>
-			<div class="col-1 panel ">1</div> <div class="col-11 panel omega">11</div>
-			<div class="col-2 panel ">2</div> <div class="col-10 panel omega">10</div>
-			<div class="col-3 panel ">3</div> <div class="col-9 panel omega">9</div>
-			<div class="col-4 panel ">4</div> <div class="col-8 panel omega">8</div>
-			<div class="col-5 panel ">5</div> <div class="col-7 panel omega">7</div>
-			<div class="col-6 panel ">6</div> <div class="col-6 panel omega">6</div>
-			<div class="col-7 panel ">7</div> <div class="col-5 panel omega">5</div>
-			<div class="col-8 panel ">8</div> <div class="col-4 panel omega">4</div>
-			<div class="col-9 panel ">9</div> <div class="col-3 panel omega">3</div>
-			<div class="col-10 panel ">10</div> <div class="col-2 panel omega">2</div>
-			<div class="col-11 panel ">11</div> <div class="col-1 panel omega">1</div>
-			<div class="col-12 panel ">12</div>
+			<div class="col-1 panel-box">1</div> <div class="col-11 panel-box omega">11</div>
+			<div class="col-2 panel-box">2</div> <div class="col-10 panel-box omega">10</div>
+			<div class="col-3 panel-box">3</div> <div class="col-9 panel-box omega">9</div>
+			<div class="col-4 panel-box">4</div> <div class="col-8 panel-box omega">8</div>
+			<div class="col-5 panel-box">5</div> <div class="col-7 panel-box omega">7</div>
+			<div class="col-6 panel-box">6</div> <div class="col-6 panel-box omega">6</div>
+			<div class="col-7 panel-box">7</div> <div class="col-5 panel-box omega">5</div>
+			<div class="col-8 panel-box">8</div> <div class="col-4 panel-box omega">4</div>
+			<div class="col-9 panel-box">9</div> <div class="col-3 panel-box omega">3</div>
+			<div class="col-10 panel-box">10</div> <div class="col-2 panel-box omega">2</div>
+			<div class="col-11 panel-box">11</div> <div class="col-1 panel-box omega">1</div>
+			<div class="col-12 panel-box">12</div>
 		</div>
+		
 
 		<hr>
 
@@ -70,13 +71,13 @@
 					<div class="col-12">
 						<div class="paginator-dark">
 							<ul>
-								<a href=""><li class="link-left">&laquo;</li></a>
+								<a href=""><li class="link-left"><i class=" icon-left-open"></i></li></a>
 								<a href=""><li class="selected">1</li></a>
 								<a href=""><li>2</li></a>
 								<a href=""><li>3</li></a>
 								<a href=""><li>4</li></a>
 								<a href=""><li>5</li></a>
-								<a href=""><li class="link-right">&raquo;</li></a>
+								<a href=""><li class="link-right"><i class=" icon-right-open"></i></li></a>
 							</ul>
 						</div>
 					</div>
@@ -87,13 +88,13 @@
 					<div class="col-12">
 						<div class="paginator-light">
 							<ul>
-								<a href=""><li class="link-left">&laquo;</li></a>
+								<a href=""><li class="link-left"><i class=" icon-left-open"></i></li></a>
 								<a href=""><li class="selected">1</li></a>
 								<a href=""><li>2</li></a>
 								<a href=""><li>3</li></a>
 								<a href=""><li>4</li></a>
 								<a href=""><li>5</li></a>
-								<a href=""><li class="link-right">&raquo;</li></a>
+								<a href=""><li class="link-right"><i class=" icon-right-open"></i></li></a>
 							</ul>
 						</div>				
 					</div>
@@ -108,6 +109,10 @@
 					<input type="text" placeholder="Error" class="input input-error col-5">
 					<input type="text" placeholder="Success" class="input input-success col-5">
 					<input type="text" placeholder="Disabled" class="input input-disabled col-5" disabled>
+                    <select class="select col-5">
+                        <option>Teste</option>
+                        <option>Teste 2</option>
+                    </select>
 					<textarea name="" id="" cols="30" rows="10" class="textarea col-5" Placeholder="Textarea"></textarea>
 				</form>
 
@@ -146,7 +151,7 @@
 					<h3>Testar</h3>
 					<div class="" id="bloco"></div>
 					<form action="">
-						<input type="text" class="input css-value" placeholder="Mg-t-*">
+						<input type="text" class="input css-value col-2" placeholder="Mg-t-*">
 					</form>
 				</div>
 
@@ -173,15 +178,24 @@
 					<input type="button" value="Secondary Button" class="button button-secondary">
 				</div>
 
-				<div class="col-12">
+				<div class="col-12 panel-box">
 					<h1>Icones</h1>
 					<p>O Structure já vem equipado com uma fonte de icones para facilitar na hora de adicionar um icone na pagina.
           			Veja o exemplo clicando <a href="exemples/demo-font.html" target="_blank">Aqui</a>!
 					</p>
         			<p>Para usar a fonte você adiciona uma tag < i> e coloca a class com o nome do icone.</p>
 				</div>
+				
+				<div class="col-12">
+					<h1>Lista</h1>
+					<ul class="list list-line">
+					  <li>List Item 1</li>
+					  <li>List Item 2</li>
+					  <li>List Item 3</li>
+					</ul>
+				</div>
 			</div>
-		</div>
+        </div>
 	</div>
 
 	<script src="js/Structure.js"></script>

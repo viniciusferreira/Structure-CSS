@@ -858,7 +858,9 @@ table {
 /* Container */
 .container {
   width: 90%;
-  margin: 0 auto;
+  /*width: 1000px;*/
+  max-width: 1000px;
+  margin: auto;
 }
 .col-1,
 .col-2,

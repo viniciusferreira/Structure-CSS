@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Structure CSS </title>
-	<link rel="stylesheet" href="css/Structure.css">
+	<link rel="stylesheet" href="css/Structure.css" type="text/css">
 </head>
 <body>
 	<div class="container">
@@ -46,8 +46,12 @@
 
 		<div class="row">
 			<div class="col-9">
+
 				<h1>Menus</h1>
+
 				<h3>Navbar + Dropdown</h3>
+
+
 				<div id="navbar">
 					<a href="#navbar" id="navbarLink" class="float-right"></a>
 					<a href="" class="titulo float-left">
@@ -64,6 +68,21 @@
 						</li></a>
 						<a href=""><li>Contato</li></a>
 					</ul>
+				</div>
+
+				<div class="col-12">
+					
+					<h3>Tabs</h3>
+
+					<div class="tabs">
+						<a href="#navbar" id="navbarLink" class="float-right"></a>
+						<ul>
+							<a href=""><li class="selected">Home</li></a>
+							<a href=""><li>Sobre</li></a>
+							<a href=""><li>Contato</li></a>
+						</ul>
+					</div>
+
 				</div>
 				
 				<div class="col-6">
@@ -133,12 +152,44 @@
 				<div class="col-12 neutro">
 					<p>Neutro</p>
 				</div>
+
+				<div class="col-12">
+					<hr>
+					<h1>Imagens</h1>
+					
+					<div class="col-2 img-circle">
+						<img src="img/image.png" class="img-responsive" alt="">
+					</div>
+
+					<div class="col-2 img-block">
+						<img src="img/image.png" class="img-responsive" alt="" >
+					</div>
+
+					<div class="col-2 img-border">
+						<img src="img/image.png" class="img-responsive" alt="">
+					</div>
+				</div>
+
+				<div class="col-12">
+					<h2>Efeitos</h2>
+
+					<div class="col-2 img-block ef-gray"><img src="img/image.png" alt=""><p class="img-p">Grayscale</p></div>
+					<div class="col-2 img-block ef-blur"><img src="img/image.png" alt=""><p class="img-p">Blur</p></div>
+					<div class="col-2 img-block ef-sepia"><img src="img/image.png" alt=""><p class="img-p">Sepia</p></div>
+
+					<div class="col-2 img-block ef-sat"><img src="img/image.png" alt=""><p class="img-p">Saturar</p></div>
+					<div class="col-2 img-block ef-opaci"><img src="img/image.png" alt=""><p class="img-p">Opacidade</p></div>
+					<div class="col-2 img-block ef-brilho"><img src="img/image.png" alt=""><p class="img-p">Brilho</p></div>
+
+					<div class="col-2 img-block ef-border"><img src="img/image.png" alt=""><p class="img-p">Borda</p></div>
+
+				</div>
 				
 				<div class="col-12">
 					<hr>
 					<h1>Margins</h1>
 				
-					<p>Com o Structure CSS você não vai precisar mais escrever uma código no css para colocar alguma margem em seu projeto, basta colocar uma class com o seguinte código mg-t-*, mg-b-*, mg-l-* e mg-r-*.
+					<p>Com o Structure CSS você não vai precisar mais escrever um código no css para colocar alguma margem em seu projeto, basta colocar uma class com o seguinte código mg-t-*, mg-b-*, mg-l-* e mg-r-*.
 					</p>
 
 					<p>Os valores vão e 5 pixels a 90 pixels.</p>
@@ -178,7 +229,7 @@
 					<input type="button" value="Secondary Button" class="button button-secondary">
 				</div>
 
-				<div class="col-12 panel-box">
+				<div class="col-12">
 					<h1>Icones</h1>
 					<p>O Structure já vem equipado com uma fonte de icones para facilitar na hora de adicionar um icone na pagina.
           			Veja o exemplo clicando <a href="exemples/demo-font.html" target="_blank">Aqui</a>!
@@ -192,6 +243,14 @@
 					  <li>List Item 1</li>
 					  <li>List Item 2</li>
 					  <li>List Item 3</li>
+					</ul>
+
+					<div class="mg-b-60"></div>
+
+					<ul class="list list-block">
+					  <li><a href="#">List Item 1</a></li>
+					  <li><a href="#">List Item 2</a></li>
+					  <li><a href="#">List Item 3</a></li>
 					</ul>
 				</div>
 			</div>

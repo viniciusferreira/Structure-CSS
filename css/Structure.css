@@ -130,16 +130,21 @@ body {
 /* ==========================================================================
    Links
    ========================================================================== */
-a {
+a  {
   background: transparent;
   text-decoration: none;
+  color:#33d4f9 ;
 }
 a:focus {
   outline: thin dotted;
 }
 a:active,
-a:hover {
+a:hover,
+a:visited
+{
   outline: 0;
+  transition: all 0.3s;
+  color: #00a1e6;
 }
 /* ==========================================================================
    Typography
@@ -321,12 +326,40 @@ textarea {
    ========================================================================== */
 .list {
   list-style: none;
+  padding-left: 0;
+ 	margin-left: 0;
 }
 .list-line li {
   margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #dddddd;
 }
+
+.list-line li:first-child{
+  border: none;
+}
+
+
+/*-----------------
+  Lista tipo bloco
+------------------*/
+
+  .list-block li{
+    width: 100%;
+    background: #eee;
+    padding: 10px;
+    margin-top: 2px;
+  }
+
+  .list-block li a{
+    color: #222;
+  }
+
+  .list-block li:hover{
+    transition: all 0.3s;
+    background: #ddd;
+  }
+
 /* ==========================================================================
    Formulários, Input, Select, Textarea
    ========================================================================== */
@@ -366,7 +399,7 @@ form {
 .input-error:focus {
   transition: all 0.2s;
   outline: none;
-  box-shadow: 0 0 6px #9fd9f9;
+  box-shadow: 0 0 5px #ff3038;
   border: solid 1px #ff3038;
 }
 .input-success {
@@ -390,6 +423,7 @@ form {
   color: #666;
   height: 150px;
   margin: 9px 0 18px 0;
+	max-width:100%;
 }
 .textarea:focus {
   transition: all 0.2s;
@@ -506,7 +540,6 @@ table {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   overflow-x: hidden;
 }
@@ -534,7 +567,7 @@ table {
   padding: 0;
   z-index: 1;
 }
-#sidebar ul a li {
+#sidebar ul li{
   text-transform: capitalize;
   color: #888;
   text-decoration: none;
@@ -543,13 +576,13 @@ table {
   padding-bottom: 15px;
   padding-left: 10px;
 }
-#sidebar ul ul li:hover {
+#sidebar ul li:hover {
   background-color: #333;
 }
 #sidebar ul li.selected {
   background-color: #333;
 }
-#sidebar ul ul li.header {
+#sidebar ul li.header {
   color: #fff !important;
   border-bottom: 1px solid #333;
   text-transform: uppercase;
@@ -612,9 +645,8 @@ table {
   padding-left: 15px;
   padding-right: 15px;
   color: #fff;
-  border-left: 1px solid #555;
-  border-bottom: 1px solid #555;
-  border-top: 1px solid #555;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+ 	border-right: none;
   float: left;
 }
 .paginator-dark ul li:hover {
@@ -625,7 +657,7 @@ table {
 }
 .paginator-dark ul li.link-right {
   border-radius: 0px 3px 3px 0px;
-  border-right: 1px solid #555;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .paginator-dark ul li.selected {
   background-color: #3C90DB;
@@ -643,9 +675,8 @@ table {
   padding-left: 15px;
   padding-right: 15px;
   color: #000;
-  border-left: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  border-top: 1px solid #aaa;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+	border-right: none;
   float: left;
 }
 .paginator-light ul li:hover {
@@ -656,7 +687,7 @@ table {
 }
 .paginator-light ul li.link-right {
   border-radius: 0px 3px 3px 0px;
-  border-right: 1px solid #aaa;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .paginator-light ul li.selected {
   background-color: #3C90DB;
@@ -713,6 +744,7 @@ table {
   border: 1px solid #888;
   border-radius: 5px;
 }
+
 @media (max-width: 767px) {
   #navbar ul {
     display: none;
@@ -816,6 +848,47 @@ table {
     display: block;
   }
 }
+
+
+/* ==========================================================================
+    Tabs  
+   ========================================================================== */
+
+.tabs{
+  border-bottom: 1px solid #ccc; 
+}
+
+.tabs #navbarLink{
+  display: none;
+}
+
+.tabs ul li{
+  display: inline;
+  padding: 10px 10px 17px 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabs ul li:hover{
+  transition: all 0.3s;
+  background: #eee;
+}
+
+.tabs ul a li.selected {
+  color: #333;
+}
+
+.tabs ul li.selected{
+  display: inline;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  padding: 10px 10px 17px 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabs ul li.selected:hover{
+  background: none;
+}
+
 /* ==========================================================================
    Grids
    ========================================================================== */
@@ -1001,6 +1074,86 @@ table {
 .omega {
   margin-right: 0;
 }
+
+/* ==========================================================================
+   Imagens
+   ========================================================================== */
+
+.img-circle img{
+  border-radius: 100px;
+}
+
+.img-border{
+  border: solid 1px #ccc;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.img-block img{
+  border-radius: 3px;
+}
+
+/* ==========================================================================
+   Efeitos
+   ========================================================================== */
+
+.ef-gray:hover img{
+  transition: all 0.3s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+.ef-blur:hover img{
+  transition: all 0.3s;
+  filter: blur(2px);
+  -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.ef-sepia:hover img{
+  transition: all 0.3s;
+  filter: sepia(1); 
+  -webkit-filter: sepia(1); 
+  -moz-filter: sepia(1); 
+}
+
+.ef-sat:hover img{
+  transition: all 0.3s;
+  filter: saturate(4);
+  -webkit-filter: saturate(4);
+  -moz-filter: saturate(4);
+}
+
+.ef-brilho:hover img{
+  transition: all 0.3s;
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+  -moz-filter: brightness(0.5);
+}
+
+.ef-opaci:hover img{
+  transition: all 0.3s;
+  opacity: 0.5;
+}
+
+.ef-border:hover img{
+  transition: all 0.3s;
+  border: solid #ccc 3px;
+}
+
+.img-p{ 
+  font-weight: bold;
+  margin-left:0;
+}
+
+.img-responsive{
+  width: 100%;
+}
+
+
+
+
 /* ==========================================================================
    WazeIconFont
    ========================================================================== */

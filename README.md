@@ -6,4 +6,4 @@ um sistema de Grids, Botões, Avisos, Formulários e muito mais, tendo como seu 
 inteligente e organizado.
 
 
-Contato para feddbacks etc: valdecirtjunior@gmail.com
+Contato para feedbacks etc: valdecirtjunior@gmail.com

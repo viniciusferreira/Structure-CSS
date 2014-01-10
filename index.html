@@ -2,126 +2,95 @@
 <html lang="pt">
 <head>
 	<meta charset="UTF-8">
-	<title>Structure CSS </title>
-	<link rel="stylesheet" href="css/Structure.css" type="text/css">
+	<title>Structure CSS</title>
+	<link rel="stylesheet" href="css/Structure.css">
 </head>
 <body>
 	<div class="container">
-		<div class="row mg-t-50">
-			<div class="col-7">
-				<h1>Structure CSS</h1>
-				<h3>Framework CSS responsivo</h3>
-				<p>
-					Structure CSS é um framework css responsivo 100% brasileiro que conta com inumeras funcionalidades e ferramentas feitas para facilitar o desenvolvimente de aplicações web, que conta com sistema de grids, botões, forms e muito mais gratuitamente.
-				</p>
-				<a href="https://github.com/Structure-CSS/Structure-CSS/" target="_blank">
-					<input type="button" value="Download no Github" class="button button-primary">
-				</a>
-			</div>
-			<div class="col-5">
-				<img src="img/responsive.jpg" alt="">
-			</div>
-		</div>
-
-		<hr>
-
+		<h1>Structure CSS</h1>
 		<div class="row">
-			<div class="col-12"><h1>Grids</h1></div>
-			<div class="col-1 panel-box">1</div> <div class="col-11 panel-box omega">11</div>
-			<div class="col-2 panel-box">2</div> <div class="col-10 panel-box omega">10</div>
-			<div class="col-3 panel-box">3</div> <div class="col-9 panel-box omega">9</div>
-			<div class="col-4 panel-box">4</div> <div class="col-8 panel-box omega">8</div>
-			<div class="col-5 panel-box">5</div> <div class="col-7 panel-box omega">7</div>
-			<div class="col-6 panel-box">6</div> <div class="col-6 panel-box omega">6</div>
-			<div class="col-7 panel-box">7</div> <div class="col-5 panel-box omega">5</div>
-			<div class="col-8 panel-box">8</div> <div class="col-4 panel-box omega">4</div>
-			<div class="col-9 panel-box">9</div> <div class="col-3 panel-box omega">3</div>
-			<div class="col-10 panel-box">10</div> <div class="col-2 panel-box omega">2</div>
-			<div class="col-11 panel-box">11</div> <div class="col-1 panel-box omega">1</div>
-			<div class="col-12 panel-box">12</div>
-		</div>
-		
-
-		<hr>
-
-		<div class="row">
-			<div class="col-9">
-
-				<h1>Menus</h1>
-
-				<h3>Navbar + Dropdown</h3>
-
-
-				<div id="navbar">
-					<a href="#navbar" id="navbarLink" class="float-right"></a>
-					<a href="" class="titulo float-left">
-						Waze CSS
-					</a>
-					<ul>
-						<a href=""><li>Home</li></a>
-						<a href=""><li class="drop">Sobre
-							<ul>
-								<a href=""><li>Opcao 1</li></a>
-								<a href=""><li>Opcao 2</li></a>						
-								<a href=""><li class="last">Opcao 3</li></a>
-							</ul>
-						</li></a>
-						<a href=""><li>Contato</li></a>
-					</ul>
-				</div>
-
-				<div class="col-12">
-					
-					<h3>Tabs</h3>
-
-					<div class="tabs">
-						<a href="#navbar" id="navbarLink" class="float-right"></a>
+			<h2>Navbar Dropdown</h2>
+			<nav>
+				<ul class="navbar clearfix">
+					<li class="title"><a href="#">Structure</a></li>
+					<li><a href="#"><span>Home</span></a></li>
+					<li><a href="#"><span>About</span></a></li>
+					<li><a href="#"><span>Services</span></a>
 						<ul>
-							<a href=""><li class="selected">Home</li></a>
-							<a href=""><li>Sobre</li></a>
-							<a href=""><li>Contato</li></a>
-						</ul>
-					</div>
-
-				</div>
-				
-				<div class="col-6">
-					<h3>paginator Dark</h3>
-					<div class="col-12">
-						<div class="paginator-dark">
-							<ul>
-								<a href=""><li class="link-left"><i class=" icon-left-open"></i></li></a>
-								<a href=""><li class="selected">1</li></a>
-								<a href=""><li>2</li></a>
-								<a href=""><li>3</li></a>
-								<a href=""><li>4</li></a>
-								<a href=""><li>5</li></a>
-								<a href=""><li class="link-right"><i class=" icon-right-open"></i></li></a>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-6">
-					<h3>Paginator White</h3>
-					<div class="col-12">
-						<div class="paginator-light">
-							<ul>
-								<a href=""><li class="link-left"><i class=" icon-left-open"></i></li></a>
-								<a href=""><li class="selected">1</li></a>
-								<a href=""><li>2</li></a>
-								<a href=""><li>3</li></a>
-								<a href=""><li>4</li></a>
-								<a href=""><li>5</li></a>
-								<a href=""><li class="link-right"><i class=" icon-right-open"></i></li></a>
-							</ul>
-						</div>				
-					</div>
-				</div>
-				
-				<hr>
-
-				<h1>Forms</h1>
+							<li><a href="#">Web design</a></li>
+							<li><a href="#">User interface</a></li>
+							<li><a href="#">Social media</a>
+								<ul class="">
+									<li><a href="#">Gallery images</a></li>
+									<li><a href="#">Fine Slider</a></li>
+									<li><a href="#">Video in header</a></li>
+									<li><a href="#">Video Slider</a>
+										<ul>
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						 </ul>
+					 </li>
+					<li></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="row">
+			<h2>Sidebar</h2>
+			<aside>
+				<ul class="sidebar col-2">
+					<li><a href="">Home</a></li>
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Clientes</a></li>
+					<li><a href="">Conatatos</a></li>
+				</ul>
+			</aside>			
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h2>Buttons</h2>
+				<input type="button" value="Default Button" class="button">
+				<input type="button" value="Blue Button" class="button button-blue">
+				<input type="button" value="Orange Buttons" class="button button-orange">
+				<input type="button" value="Green Buttons" class="button button-green">
+				<input type="button" value="Red Buttons" class="button button-red">
+				<input type="button" value="Yellow Buttons" class="button button-yellow">
+				<input type="button" value="Disabled Buttons" class="button button-disabled" disabled>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h2>Grid</h2>
+				<div class="col-1 panel">1</div><div class="col-11 panel">11</div>
+				<div class="col-2 panel">2</div><div class="col-10 panel">10</div>
+				<div class="col-3 panel">3</div><div class="col-9 panel">9</div>
+				<div class="col-4 panel">4</div><div class="col-8 panel">8</div>
+				<div class="col-5 panel">5</div><div class="col-7 panel">7</div>
+				<div class="col-6 panel">6</div><div class="col-6 panel">6</div>
+				<div class="col-7 panel">7</div><div class="col-5 panel">5</div>
+				<div class="col-8 panel">8</div><div class="col-4 panel">4</div>
+				<div class="col-9 panel">9</div><div class="col-3 panel">3</div>
+				<div class="col-10 panel">10</div><div class="col-2 panel">2</div>
+				<div class="col-11 panel">11</div><div class="col-1 panel">1</div>
+				<div class="col-12 panel">12</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h2>Avisos</h2>
+				<div class="col-12 success">Success</div>
+				<div class="col-12 error">Error</div>
+				<div class="col-12 warning">Warning</div>
+				<div class="col-12 neutro">Neutro</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h2>Forms</h2>
 				<form action="">
 					<input type="text" placeholder="Default" class="input col-5">
 					<input type="password" placeholder="Password" class="input col-5">
@@ -134,141 +103,8 @@
                     </select>
 					<textarea name="" id="" cols="30" rows="10" class="textarea col-5" Placeholder="Textarea"></textarea>
 				</form>
-
-				<div class="col-12">
-					<hr>
-					<h1>Avisos</h1>
-				</div>
-				
-				<div class="col-12 success">
-					<p>Success</p>
-				</div>
-				<div class="col-12 error">
-					<p>Error</p>
-				</div>
-				<div class="col-12 warning">
-					<p>Warning</p>
-				</div>
-				<div class="col-12 neutro">
-					<p>Neutro</p>
-				</div>
-
-				<div class="col-12">
-					<hr>
-					<h1>Imagens</h1>
-					
-					<div class="col-2 img-circle">
-						<img src="img/image.png" class="img-responsive" alt="">
-					</div>
-
-					<div class="col-2 img-block">
-						<img src="img/image.png" class="img-responsive" alt="" >
-					</div>
-
-					<div class="col-2 img-border">
-						<img src="img/image.png" class="img-responsive" alt="">
-					</div>
-				</div>
-
-				<div class="col-12">
-					<h2>Efeitos</h2>
-
-					<div class="col-2 img-block ef-gray"><img src="img/image.png" alt=""><p class="img-p">Grayscale</p></div>
-					<div class="col-2 img-block ef-blur"><img src="img/image.png" alt=""><p class="img-p">Blur</p></div>
-					<div class="col-2 img-block ef-sepia"><img src="img/image.png" alt=""><p class="img-p">Sepia</p></div>
-
-					<div class="col-2 img-block ef-sat"><img src="img/image.png" alt=""><p class="img-p">Saturar</p></div>
-					<div class="col-2 img-block ef-opaci"><img src="img/image.png" alt=""><p class="img-p">Opacidade</p></div>
-					<div class="col-2 img-block ef-brilho"><img src="img/image.png" alt=""><p class="img-p">Brilho</p></div>
-
-					<div class="col-2 img-block ef-border"><img src="img/image.png" alt=""><p class="img-p">Borda</p></div>
-
-				</div>
-				
-				<div class="col-12">
-					<hr>
-					<h1>Margins</h1>
-				
-					<p>Com o Structure CSS você não vai precisar mais escrever um código no css para colocar alguma margem em seu projeto, basta colocar uma class com o seguinte código mg-t-*, mg-b-*, mg-l-* e mg-r-*.
-					</p>
-
-					<p>Os valores vão e 5 pixels a 90 pixels.</p>
-					<br>
-					<h3>Classes</h3>
-					<p><b>mg-t-*</b> = margin-top: *;</p>
-					<p><b>mg-b-*</b> = margin-bottom: *;</p>
-					<p><b>mg-l-*</b> = margin-left: *;</p>
-					<p><b>mg-r-*</b> = margin-right: *;</p>
-					<h3>Testar</h3>
-					<div class="" id="bloco"></div>
-					<form action="">
-						<input type="text" class="input css-value col-2" placeholder="Mg-t-*">
-					</form>
-				</div>
-
 			</div>
-			<div class="col-3">
-				<div class="col-12">
-					<h1>Sidebar</h1>
-					<p>Veja um exemplo da sidebar clicando <a href="exemples/demo-sidebar.html" target="_blank">Aqui</a>!
-					</p>
-				</div>
-
-				<h1>Botões</h1>
-				<div class="col-12">
-					<h3>Default Buttons</h3>
-					<input type="button" value="Default Button" class="button">
-					<input type="button" value="Disabled Button" class="button button-disabled">
-					<input type="button" value="Primary Button" class="button button-primary">
-				</div>		
-				<div class="col-12">
-					<h3>Colored Buttons</h3>
-					<input type="button" value="Success Button" class="button button-success">
-					<input type="button" value="Error Button" class="button button-error">
-					<input type="button" value="Warning Button" class="button button-warning">
-					<input type="button" value="Secondary Button" class="button button-secondary">
-				</div>
-
-				<div class="col-12">
-					<h1>Icones</h1>
-					<p>O Structure já vem equipado com uma fonte de icones para facilitar na hora de adicionar um icone na pagina.
-          			Veja o exemplo clicando <a href="exemples/demo-font.html" target="_blank">Aqui</a>!
-					</p>
-        			<p>Para usar a fonte você adiciona uma tag < i> e coloca a class com o nome do icone.</p>
-				</div>
-				
-				<div class="col-12">
-					<h1>Lista</h1>
-					<ul class="list list-line">
-					  <li>List Item 1</li>
-					  <li>List Item 2</li>
-					  <li>List Item 3</li>
-					</ul>
-
-					<div class="mg-b-60"></div>
-
-					<ul class="list list-block">
-					  <li><a href="#">List Item 1</a></li>
-					  <li><a href="#">List Item 2</a></li>
-					  <li><a href="#">List Item 3</a></li>
-					</ul>
-				</div>
-			</div>
-        </div>
+		</div>
 	</div>
-
-	<script src="js/Structure.js"></script>
-	<script src="js/jquery.js"></script>
-
-	<script>
-
-		$("input").keyup(function(){
-			var value = $(".css-value").val();
-			$("#bloco").removeClass();
-			$("#bloco").addClass(value);
-			return false;
-		});
-
-	</script>
 </body>
 </html>
